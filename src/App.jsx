@@ -4,8 +4,16 @@ function App() {
 
   const [cuenta, setcuenta] = useState(0)
 
-  const handleClick = () => {
+  const handleClickSuma = () => {
     setcuenta(cuenta+1);
+  }
+
+  const handleClickResta = () => {
+    setcuenta(cuenta-1);
+  }
+
+  const handleClickBorra = () => {
+    setcuenta(cuenta-cuenta);
   }
 
   return (
@@ -16,14 +24,18 @@ function App() {
       <hr/>
 
       <div 
-        style={{
+        style={{ 
           display: "flex", 
-          justifyContent: "flex-end", 
-          marginRight: "25px"
+          justifyContent: "center", 
+
         }}>
-        <button type="button" className="btn btn-primary" onClick={handleClick}>+1</button>
+        <button type="button" className="btn btn-primary" onClick={handleClickSuma}>+1</button>
+        <button type="button" className="btn btn-primary" onClick={handleClickResta}>-1</button>
+        <button type="button" className="btn btn-primary" onClick={handleClickBorra}>Borrar</button>
 
       </div>
+
+      
 
     </div>
   );
