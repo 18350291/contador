@@ -12,7 +12,7 @@ function App() {
     setcuenta(cuenta-1);
   }
 
-  const handleClickBorra = () => {
+  const handleClickReinicia = () => {
     setcuenta(cuenta-cuenta);
   }
 
@@ -31,7 +31,7 @@ function App() {
         }}>
         <button type="button" className="btn btn-primary" onClick={handleClickSuma}>+1</button>
         <button type="button" className="btn btn-primary" onClick={handleClickResta}>-1</button>
-        <button type="button" className="btn btn-primary" onClick={handleClickBorra}>Borrar</button>
+        <button type="button" className="btn btn-primary" onClick={handleClickReinicia}>Reiniciar</button>
 
       </div>
 
